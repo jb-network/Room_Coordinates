@@ -2,7 +2,6 @@
 // This is for the Level 28 "Room Coordinates" Challenge
 // This was a Structs challenge
 
-
 //Build test Coordinate Objects
 Coordinate Check1 = new Coordinate("Check 1", 4, 4);
 Coordinate Check2 = new Coordinate("Check 2", 3, 4);
