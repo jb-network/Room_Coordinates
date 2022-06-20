@@ -60,7 +60,7 @@ public struct Coordinate
         else return false;
     }
 
-    private static int CheckNegative(int SetCheck)  //I should have just used C#'s Absolute Value method.
+    private static int CheckNegative(int SetCheck) 
     {
         if (SetCheck < 0)
         {
