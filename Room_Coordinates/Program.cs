@@ -2,6 +2,7 @@
 // This is for the Level 28 "Room Coordinates" Challenge
 // This was a Structs challenge
 
+
 //Build test Coordinate Objects
 Coordinate Check1 = new Coordinate("Check 1", 4, 4);
 Coordinate Check2 = new Coordinate("Check 2", 3, 4);
@@ -49,19 +50,18 @@ public struct Coordinate
 
     public static bool AdjacentCheck(Coordinate First, Coordinate Second)
     {
-        int SetRow = First.Row - Second.Row;
-        int CheckRow = CheckNegative(SetRow); //Added to check and convert negative number from line above
+        //Pass output to check/convert possible negative number produced by the expression
+        int SetRow = CheckNegative(First.Row - Second.Row);         
+        int SetColumn = CheckNegative(First.Column - Second.Column);
         
-        int SetColumn = First.Column - Second.Column;
-        int CheckColumn = CheckNegative(SetColumn); //Added to check and convert negative number from line above
-
-        if (CheckRow == 0 && CheckColumn <= 1) return true;
-        else if (CheckRow <= 1 && CheckColumn == 0) return true;
+        //Check adjacent logic
+        if (SetRow == 0 && SetColumn <= 1) return true;
+        else if (SetRow <= 1 && SetColumn == 0) return true;
         else return false;
     }
 
-    private static int CheckNegative(int SetCheck)  //I should have just used C#'s Absolute Value method.
-    {
+    private static int CheckNegative(int SetCheck)  
+    {   //If SetCheck is a negative number return positive  of the number
         if (SetCheck < 0)
         {
             SetCheck *= -1;
