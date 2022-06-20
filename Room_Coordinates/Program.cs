@@ -30,7 +30,7 @@ public struct Coordinate
 
     private static int CheckNegative(int SetCheck);
     {
-        if (SetCheck < 0) 
+        if (SetCheck < 0)
     }
 }
 
