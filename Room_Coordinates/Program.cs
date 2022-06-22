@@ -5,7 +5,7 @@
 //Build test Coordinate Objects
 Coordinate Check1 = new Coordinate("Check 1", 1, 1);
 Coordinate Check2 = new Coordinate("Check 2", 2, 2);
-Coordinate Check3 = new Coordinate("Check 3", 4, 5);
+Coordinate Check3 = new Coordinate("Check 3", 3, 2);
 Coordinate Check4 = new Coordinate("Check 4", 9, 8);
 
 //Output for the program
