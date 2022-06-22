@@ -49,8 +49,7 @@ public struct Coordinate
     {
         Name = TestName;
         Row = ProvidedRow;
-        Column = ProvidedColumn;
-        
+        Column = ProvidedColumn;        
     }
     
     //Pass output to check/convert possible negative number produced by the expression
