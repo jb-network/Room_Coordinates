@@ -3,8 +3,8 @@
 // This was a Structs challenge
 
 //Build test Coordinate Objects
-Coordinate Check1 = new Coordinate("Check 1", 4, 4);
-Coordinate Check2 = new Coordinate("Check 2", 3, 4);
+Coordinate Check1 = new Coordinate("Check 1", 1, 1);
+Coordinate Check2 = new Coordinate("Check 2", 2, 2);
 Coordinate Check3 = new Coordinate("Check 3", 4, 5);
 Coordinate Check4 = new Coordinate("Check 4", 9, 8);
 
@@ -61,8 +61,7 @@ public struct Coordinate
         int SetColumn = CheckNegative(First.Column - Second.Column);
         
         //Check adjacent logic
-        if (SetRow == 0 && SetColumn <= 1) return true;
-        else if (SetRow <= 1 && SetColumn == 0) return true;
+        if (SetRow == 0 && SetColumn <= 1 || SetRow <= 1 && SetColumn == 0 || SetRow == 1 && SetColumn == 1) return true;
         else return false;
     }
     
